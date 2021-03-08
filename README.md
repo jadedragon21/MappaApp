@@ -7,13 +7,9 @@ Add in a  application.properties file in the resources file.
 
 Add in these lines to the aforementioned application.properties file.
 
-google_api_key = (Put your api key here xxx)
+API_KEY = (Put your api key here xxx)
+spring.output.ansi.enabled=ALWAYS
 
-transit_url = http://developer.itsmarta.com/BRDRestService/RestBusRealTimeService/GetAllBus
-
-geocoding_url = https://maps.googleapis.com/maps/api/geocode/json?address=
-
-distance_url = https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&
 
 Run application and type the below http address into your browser and voila!
 
