@@ -17,4 +17,7 @@ http://localhost:8080/home to get to the cat bus map.
 
 
 Home Page:
+
+
+
 ![index.html](https://github.com/jadedragon21/MappaApp/blob/main/src/main/resources/static/Screenshot_2021-03-08%20Maps.png)
