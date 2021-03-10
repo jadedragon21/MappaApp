@@ -1,4 +1,6 @@
   var map;
+
+
 //  let coords = {lat: 39.9612, lng: -82.9988}
 
 
@@ -21,12 +23,17 @@
             animation: google.maps.Animation.BOUNCE
           });
 
-    let contentString = `<h2> ${city}, ${state} </h2>`;
 
-    let infoWindow = new google.maps.InfoWindow({
-        content: contentString
-    })
+    const transitLayer = new google.maps.TransitLayer();
+      transitLayer.setMap(map);
+    const trafficLayer = new google.maps.TrafficLayer();
+      trafficLayer.setMap(map);
 
-    google.maps.event.addListener(marker, 'click', () => infoWindow.open(map, marker));
+     let contentString = "<h2>" + city + ", " + state + ", where your dreams come true!</h2>";
 
-  }
+      let infowindow = new google.maps.InfoWindow({
+            content: contentString
+        })
+    google.maps.event.addListener(marker, 'click', () => infowindow.open(map, marker));
+
+}
